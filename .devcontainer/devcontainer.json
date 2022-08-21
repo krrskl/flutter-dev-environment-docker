@@ -1,0 +1,15 @@
+{
+  "name": "Flutter dev environment Docker",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "runArgs": ["--privileged", "--net", "host"],
+  "extensions": [
+    "dart-code.flutter",
+    "circlecodesolution.ccs-flutter-color",
+    "Dart-Code.flutter",
+    "alexisvt.flutter-snippets",
+    "MarufHassan.flutter-snippets"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/workspace,type=bind,consistency=delegated",
+  "workspaceFolder": "/home/workspace"
+}
